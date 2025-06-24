@@ -1,0 +1,141 @@
+/* Light Theme Styles */
+body.light {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+}
+
+body.light .glass-effect {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(100, 100, 120, 0.2);
+}
+
+body.light #menu-button span {
+    background-color: #333;
+}
+
+body.light,
+body.light .form-input,
+body.light .form-input::placeholder {
+    color: #374151;
+}
+
+body.light .text-purple-300,
+body.light .text-purple-200,
+body.light .text-purple-100 {
+    color: #5b21b6;
+}
+
+body.light .hover\:text-purple-200:hover,
+body.light .hover\:text-purple-100:hover {
+    color: #7c3aed;
+}
+
+body.light nav a.active {
+    color: #4c1d95;
+    font-weight: 600;
+}
+
+body.light .section-heading {
+    color: #3730a3;
+}
+
+body.light .text-purple-400 {
+    color: #7c3aed;
+}
+
+body.light .btn-primary {
+    background-color: #6d28d9;
+    box-shadow: 0 4px 15px rgba(109, 40, 217, 0.3);
+}
+
+body.light .btn-primary:hover {
+    background-color: #8b5cf6;
+}
+
+body.light .form-input {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+body.light .form-input::placeholder {
+    color: #9ca3af;
+}
+
+body.light .form-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+/* ======================= */
+/* Dark Theme Styles Below */
+/* ======================= */
+body.dark {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+}
+
+body.dark .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.6);
+}
+
+body.dark #menu-button span {
+    background-color: #e2e8f0;
+}
+
+body.dark,
+body.dark .form-input,
+body.dark .form-input::placeholder {
+    color: #e5e7eb;
+}
+
+body.dark .text-purple-300,
+body.dark .text-purple-200,
+body.dark .text-purple-100 {
+    color: #c4b5fd;
+}
+
+body.dark .hover\:text-purple-200:hover,
+body.dark .hover\:text-purple-100:hover {
+    color: #d8b4fe;
+}
+
+body.dark nav a.active {
+    color: #c084fc;
+    font-weight: 600;
+}
+
+body.dark .section-heading {
+    color: #a78bfa;
+}
+
+body.dark .text-purple-400 {
+    color: #d8b4fe;
+}
+
+body.dark .btn-primary {
+    background-color: #9333ea;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
+}
+
+body.dark .btn-primary:hover {
+    background-color: #a855f7;
+}
+
+body.dark .form-input {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f3f4f6;
+}
+
+body.dark .form-input::placeholder {
+    color: #9ca3af;
+}
+
+body.dark .form-input:focus {
+    border-color: #c084fc;
+    box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.2);
+}

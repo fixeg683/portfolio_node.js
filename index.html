@@ -7,115 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
     <style>
-        /* Custom Styles for Glass Morphism and Purple Theme */
-        body {
-            font-family: 'Inter', sans-serif;
-            /* Example Gradient Background - Can be customized */
-            background: linear-gradient(135deg, #301934 0%, #6a0dad 50%, #c379f0 100%);
-            background-attachment: fixed;
-            color: #f0e6ff; /* Light purple/lavender text for good contrast on dark background */
-        }
-
-        /* Glass Morphism Effect Class */
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05); /* Very subtle white tint for the glass */
-            backdrop-filter: blur(12px) saturate(150%);
-            -webkit-backdrop-filter: blur(12px) saturate(150%); /* For Safari */
-            border-radius: 1rem; /* 16px */
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px 0 rgba(18, 0, 30, 0.37); /* Darker purple shadow */
-        }
-
-        /* Custom scrollbar (optional, for aesthetics) */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: rgba(48, 25, 52, 0.5); /* Dark purple track */
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #8c52ff; /* Brighter purple thumb */
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #a370ff;
-        }
-
-        /* Active Nav Link Style */
-        nav a.active {
-            color: #d8b4fe; /* Lighter purple for active link */
-            font-weight: 600;
-        }
-
-        /* Section Heading Style */
-        .section-heading {
-            font-size: 2.5rem; /* 40px */
-            font-weight: 700;
-            color: #e9d5ff; /* Light lavender */
-            margin-bottom: 2rem; /* 32px */
-            text-align: center;
-            text-shadow: 0 0 10px rgba(200, 160, 255, 0.3);
-        }
-
-        /* Portfolio Card Hover Effect */
-        .portfolio-card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 12px 40px 0 rgba(18, 0, 30, 0.5);
-        }
-        
-        /* Button Styling */
-        .btn-primary {
-            background-color: #8c52ff;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 15px rgba(140, 82, 255, 0.3);
-        }
-        .btn-primary:hover {
-            background-color: #a370ff;
-            transform: translateY(-2px);
-        }
-
-        /* Form Input Styling */
-        .form-input {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 0.5rem;
-            padding: 0.75rem 1rem;
-            color: #f0e6ff;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        .form-input::placeholder {
-            color: rgba(240, 230, 255, 0.6);
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: #a370ff;
-            box-shadow: 0 0 0 3px rgba(163, 112, 255, 0.3);
-        }
-
-        /* Mobile Menu Icon */
-        #menu-button span {
-            background-color: #f0e6ff;
-            height: 2px;
-            width: 20px;
-            display: block;
-            margin: 4px auto;
-            transition: all 0.3s ease-in-out;
-        }
-        #menu-button.open span:nth-child(1) {
-            transform: translateY(6px) rotate(45deg);
-        }
-        #menu-button.open span:nth-child(2) {
-            opacity: 0;
-        }
-        #menu-button.open span:nth-child(3) {
-            transform: translateY(-6px) rotate(-45deg);
-        }
-
+        /* The original CSS from your file goes here */
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #301934 0%, #6a0dad 50%, #c379f0 100%); background-attachment: fixed; color: #f0e6ff; }
+        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px) saturate(150%); -webkit-backdrop-filter: blur(12px) saturate(150%); border-radius: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 8px 32px 0 rgba(18, 0, 30, 0.37); }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: rgba(48, 25, 52, 0.5); } ::-webkit-scrollbar-thumb { background: #8c52ff; border-radius: 4px; } ::-webkit-scrollbar-thumb:hover { background: #a370ff; }
+        nav a.active { color: #d8b4fe; font-weight: 600; }
+        .section-heading { font-size: 2.5rem; font-weight: 700; color: #e9d5ff; margin-bottom: 2rem; text-align: center; text-shadow: 0 0 10px rgba(200, 160, 255, 0.3); }
+        .portfolio-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 40px 0 rgba(18, 0, 30, 0.5); }
+        .btn-primary { background-color: #8c52ff; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; transition: background-color 0.3s ease, transform 0.2s ease; box-shadow: 0 4px 15px rgba(140, 82, 255, 0.3); }
+        .btn-primary:hover { background-color: #a370ff; transform: translateY(-2px); }
+        .form-input { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 0.75rem 1rem; color: #f0e6ff; transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+        .form-input::placeholder { color: rgba(240, 230, 255, 0.6); }
+        .form-input:focus { outline: none; border-color: #a370ff; box-shadow: 0 0 0 3px rgba(163, 112, 255, 0.3); }
+        #menu-button span { background-color: #f0e6ff; height: 2px; width: 20px; display: block; margin: 4px auto; transition: all 0.3s ease-in-out; }
+        #menu-button.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); } #menu-button.open span:nth-child(2) { opacity: 0; } #menu-button.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen antialiased">
@@ -128,245 +35,141 @@
                 <a href="#portfolio" class="hover:text-purple-200 transition-colors px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
                 <a href="#pitch" class="hover:text-purple-200 transition-colors px-3 py-2 rounded-md text-sm font-medium">Elevator Pitch</a>
                 <a href="#contact" class="hover:text-purple-200 transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                </nav>
-            <div class="md:hidden">
-                <button id="menu-button" class="text-gray-200 focus:outline-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="text-xl text-purple-200 hover:text-white" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
                 </button>
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-gray-200 focus:outline-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
         <div id="mobile-menu" class="md:hidden hidden bg-opacity-90 glass-effect rounded-b-lg">
-            <a href="#about" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">About Me</a>
-            <a href="#portfolio" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">Portfolio</a>
-            <a href="#pitch" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">Elevator Pitch</a>
-            <a href="#contact" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">Contact</a>
-            </div>
+            <a href="about.html" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">About Me</a>
+            <a href="portfolio.html" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">Portfolio</a>
+            <a href="pitch.html" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">Elevator Pitch</a>
+            <a href="contact.html" class="block text-center py-3 px-4 text-sm hover:bg-purple-700/30 transition-colors">Contact</a>
+        </div>
     </header>
 
-    <main class="pt-28 sm:pt-32">
-
-        <section id="hero" class="min-h-[calc(80vh-7rem)] flex items-center justify-center text-center px-4 py-16 sm:py-20">
-            <div class="glass-effect p-8 sm:p-12 md:p-16 max-w-3xl mx-auto">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                    Crafting <span class="text-purple-400">Innovative</span> Digital Experiences
-                </h1>
-                <p class="text-lg sm:text-xl text-purple-200 mb-8">
-                    Welcome to my personal portfolio. I specialize in [Your Main Skill/Field, e.g., Web Development, UI/UX Design].
-                </p>
-                <a href="#portfolio" class="btn-primary text-lg">View My Work</a>
-            </div>
-        </section>
-
-        <section id="about" class="py-16 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6">
-                <h2 class="section-heading">About Me</h2>
-                <div class="glass-effect p-8 sm:p-10 md:p-12 max-w-4xl mx-auto grid md:grid-cols-3 gap-8 items-center">
-                    <div class="md:col-span-1 flex justify-center">
-                        <img src="https://placehold.co/200x200/6a0dad/f0e6ff?text=Your+Photo" alt="Your Name" class="rounded-full w-40 h-40 sm:w-48 sm:h-48 object-cover border-4 border-purple-400/50">
-                    </div>
-                    <div class="md:col-span-2 text-center md:text-left">
-                        <p class="mb-4 text-lg leading-relaxed">
-                            Hello! I'm [Your Name], a passionate and dedicated [Your Profession/Title] with a strong background in [mention 1-2 key areas]. I thrive on turning complex problems into elegant, user-friendly solutions.
-                        </p>
-                        <p class="mb-4 leading-relaxed">
-                            My journey in [Your Field] began [briefly explain how you started or what sparked your interest]. Since then, I've honed my skills in [mention 2-3 key skills like specific technologies, methodologies, or software], and I'm always eager to learn and adapt to new challenges.
-                        </p>
-                        <p class="leading-relaxed">
-                            When I'm not [working/coding/designing], I enjoy [mention a hobby or interest] which helps me approach my work with fresh perspectives. I believe in [mention a core value or philosophy related to your work].
-                        </p>
-                         </div>
+    <section id="about" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="section-heading">About Me</h2>
+            <div class="glass-effect p-8 sm:p-10 md:p-12 max-w-4xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-1 flex justify-center">
+                     <img src="img/mypic.jpeg" alt="Jacob Otana" class="rounded-full w-40 h-40 sm:w-48 sm:h-48 object-cover border-4 border-purple-400/50">
                 </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="py-16 sm:py-20 bg-black/20"> <div class="container mx-auto px-4 sm:px-6">
-                <h2 class="section-heading">Portfolio</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
-                    <div class="glass-effect p-6 rounded-lg portfolio-card transition-all duration-300 ease-in-out">
-                        <img src="https://placehold.co/600x400/8c52ff/f0e6ff?text=Project+Alpha" alt="Project Alpha" class="rounded-md mb-4 w-full h-48 object-cover">
-                        <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-purple-300">Project Alpha</h3>
-                        <p class="text-sm text-purple-200 mb-3">A brief description of Project Alpha. What it does, the technologies used, and your role in it. Focus on impact and results.</p>
-                        <div class="flex space-x-2">
-                            <span class="bg-purple-600/50 text-purple-200 text-xs px-2 py-1 rounded-full">Skill 1</span>
-                            <span class="bg-purple-600/50 text-purple-200 text-xs px-2 py-1 rounded-full">Skill 2</span>
-                        </div>
-                        <a href="#" target="_blank" class="inline-block mt-4 text-purple-300 hover:text-purple-100 font-medium">View Project <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                    </div>
-                    <div class="glass-effect p-6 rounded-lg portfolio-card transition-all duration-300 ease-in-out">
-                        <img src="https://placehold.co/600x400/8c52ff/f0e6ff?text=Project+Beta" alt="Project Beta" class="rounded-md mb-4 w-full h-48 object-cover">
-                        <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-purple-300">Project Beta</h3>
-                        <p class="text-sm text-purple-200 mb-3">Showcase another piece of your work. Highlight different skills or a different type of project to show versatility.</p>
-                         <div class="flex space-x-2">
-                            <span class="bg-purple-600/50 text-purple-200 text-xs px-2 py-1 rounded-full">Skill 3</span>
-                            <span class="bg-purple-600/50 text-purple-200 text-xs px-2 py-1 rounded-full">Skill 4</span>
-                        </div>
-                        <a href="#" target="_blank" class="inline-block mt-4 text-purple-300 hover:text-purple-100 font-medium">View Details <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                    </div>
-                    <div class="glass-effect p-6 rounded-lg portfolio-card transition-all duration-300 ease-in-out">
-                        <img src="https://placehold.co/600x400/8c52ff/f0e6ff?text=Project+Gamma" alt="Project Gamma" class="rounded-md mb-4 w-full h-48 object-cover">
-                        <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-purple-300">Project Gamma</h3>
-                        <p class="text-sm text-purple-200 mb-3">This could be a personal project, a client commission, or a significant academic achievement. Explain its significance.</p>
-                         <div class="flex space-x-2">
-                            <span class="bg-purple-600/50 text-purple-200 text-xs px-2 py-1 rounded-full">Skill 5</span>
-                            <span class="bg-purple-600/50 text-purple-200 text-xs px-2 py-1 rounded-full">Skill 6</span>
-                        </div>
-                        <a href="#" target="_blank" class="inline-block mt-4 text-purple-300 hover:text-purple-100 font-medium">See Live Demo <i class="fas fa-arrow-right text-xs ml-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pitch" class="py-16 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6">
-                <h2 class="section-heading">My Elevator Pitch</h2>
-                <div class="glass-effect p-8 sm:p-10 md:p-12 max-w-3xl mx-auto text-center">
-                    <p class="text-lg sm:text-xl italic leading-relaxed text-purple-100">
-                        "Hi, I'm [Your Name], a [Your Profession/Title] who helps [Your Target Audience/Companies] to [Achieve a Specific Outcome/Solve a Problem] by leveraging my expertise in [Your Top 2-3 Skills like 'innovative web development', 'user-centric design', and 'agile project management']. My background in [Briefly Mention Relevant Experience/Education, e.g., 'delivering impactful SaaS solutions'] has equipped me with a unique ability to [Key Strength/Unique Value Proposition, e.g., 'translate complex requirements into intuitive and efficient digital products']. I am passionate about [Your Core Interest Related to Your Field, e.g., 'creating technology that empowers users'] and I am currently seeking [Your Ask - e.g., 'a challenging role where I can contribute to cutting-edge projects / freelance opportunities to build transformative web applications / collaborations on projects focused on sustainability']. Let's connect to discuss how I can bring [Specific Benefit, e.g., 'enhanced user engagement and measurable results'] to your team or project."
+                <div class="md:col-span-2 text-center md:text-left">
+                    <p class="mb-4 text-lg leading-relaxed">
+                        Hello! I'm Otana Jacob Wilson, a passionate and dedicated Web Developer with a strong background in creating dynamic and user-friendly web applications. I thrive on turning complex problems into elegant, functional solutions.
                     </p>
-                    <p class="mt-6 text-sm text-purple-300">(This is a placeholder. Refine it to be clear, impactful, and memorable!) </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-16 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6">
-                <h2 class="section-heading">Get In Touch</h2>
-                <div class="glass-effect p-8 sm:p-10 md:p-12 max-w-3xl mx-auto">
-                    <p class="text-center text-lg mb-8 text-purple-200">
-                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!
+                    <p class="mb-4 leading-relaxed">
+                        My journey in web development began with a fascination for how ideas come to life on the internet. Since then, I've honed my skills in JavaScript, Node.js, and modern frontend frameworks, and I'm always eager to learn and adapt to new challenges.
                     </p>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-purple-300 mb-1">Full Name</label>
-                            <input type="text" name="name" id="name" required class="w-full form-input" placeholder="e.g., Jane Doe">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-purple-300 mb-1">Email Address</label>
-                            <input type="email" name="email" id="email" required class="w-full form-input" placeholder="e.g., jane.doe@example.com">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-purple-300 mb-1">Message</label>
-                            <textarea name="message" id="message" rows="5" required class="w-full form-input" placeholder="Your message here..."></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn-primary text-lg px-8 py-3">Send Message</button>
-                        </div>
-                         <p class="text-xs text-center text-purple-300/70 mt-2">Form powered by <a href="https://web3forms.com" target="_blank" class="hover:underline">Web3Forms</a>. Replace `YOUR_ACCESS_KEY_HERE`.</p>
-                    </form>
-                    <div class="mt-10 text-center">
-                        <p class="text-purple-200">Or, reach me directly at: <a href="mailto:your.email@example.com" class="font-semibold text-purple-300 hover:text-purple-100 hover:underline">your.email@example.com</a></p>
+                    <div class="mt-6">
+                         <a href="/resume/resume.pdf" download="Otana-Jacob-Wilson-Resume.pdf" class="btn-primary">
+                            <i class="fas fa-download mr-2"></i>Download Resume
+                        </a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="py-10 mt-16 border-t border-purple-500/20">
-        <div class="container mx-auto px-4 sm:px-6 text-center text-purple-300">
-            <div class="mb-4 space-x-6">
-                 <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" class="hover:text-purple-100 transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
-                 <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub" class="hover:text-purple-100 transition-colors text-xl"><i class="fab fa-github"></i></a>
-                 <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter" class="hover:text-purple-100 transition-colors text-xl"><i class="fab fa-twitter"></i></a>
                  </div>
-            <p class="text-sm">&copy; <span id="currentYear"></span> Your Name. All Rights Reserved.</p>
-            <p class="text-xs mt-1">Designed with <i class="fas fa-heart text-purple-400"></i> and Glass Morphism.</p>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script>
-        // Mobile Menu Toggle
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            menuButton.classList.toggle('open');
-        });
+    <section id="contact" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="section-heading">Get In Touch</h2>
+            <div class="glass-effect p-8 sm:p-10 md:p-12 max-w-3xl mx-auto">
+                <p class="text-center text-lg mb-8 text-purple-200">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!
+                </p>
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-purple-300 mb-1">Full Name</label>
+                        <input type="text" name="name" id="name" required class="w-full form-input" placeholder="e.g., Jane Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-purple-300 mb-1">Email Address</label>
+                        <input type="email" name="email" id="email" required class="w-full form-input" placeholder="e.g., jane.doe@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-purple-300 mb-1">Message</label>
+                        <textarea name="message" id="message" rows="5" required class="w-full form-input" placeholder="Your message here..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-lg px-8 py-3">Send Message</button>
+                    </div>
+                    <p id="form-response" class="text-center text-sm mt-4"></p>
+                </form>
+                <div class="mt-10 text-center">
+                    <p class="text-purple-200">Or, reach me directly at: <a href="mailto:otana.wilson@example.com" class="font-semibold text-purple-300 hover:text-purple-100 hover:underline">otana.wilson@example.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuButton.classList.remove('open');
-            });
+</main>
+
+<script src="/js/main.js"></script>
+
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuButton.classList.toggle('open');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuButton.classList.remove('open');
         });
-        
-        // Smooth scroll for navigation links & active link highlighting
-        document.querySelectorAll('nav a[href^="#"], #mobile-menu a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // For mobile menu, it's handled above, this is more for desktop or general smooth scroll
-                if (this.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        // Calculate offset for fixed header
-                        const headerOffset = document.querySelector('header').offsetHeight + 20; // 20px buffer
-                        const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
+    });
+    document.querySelectorAll('nav a[href^="#"], #mobile-menu a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerOffset = document.querySelector('header').offsetHeight + 20;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
                 }
-            });
-        });
-
-        // Active link highlighting on scroll (simple version)
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('nav a, #mobile-menu a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const headerHeight = document.querySelector('header').offsetHeight + 40; // A bit more offset
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - headerHeight; // Adjust for fixed header
-                if (pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Sticky header background change on scroll (optional enhancement)
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                // You can add a class here to change header style if needed,
-                // but glass-effect already provides a good distinction.
-                // header.classList.add('scrolled'); 
-            } else {
-                // header.classList.remove('scrolled');
             }
         });
-
-        // Image error handling (simple example for portfolio images)
-        document.querySelectorAll('.portfolio-card img').forEach(img => {
-            img.onerror = function() {
-                // Replace with a fallback placeholder or style
-                this.src = 'https://placehold.co/600x400/301934/f0e6ff?text=Image+Not+Found';
-                this.alt = 'Image not found';
-            };
+    });
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a, #mobile-menu a');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const headerHeight = document.querySelector('header').offsetHeight + 40;
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - headerHeight;
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
         });
-
-    </script>
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.querySelectorAll('.portfolio-card img').forEach(img => {
+        img.onerror = function() {
+            this.src = 'https://placehold.co/600x400/301934/f0e6ff?text=Image+Not+Found';
+            this.alt = 'Image not found';
+        };
+    });
+</script>
 </body>
 </html>
-

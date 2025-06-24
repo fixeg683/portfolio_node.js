@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="p-6 text-center">
+    <a href="index.html" class="text-purple-300 font-bold text-xl hover:underline">← Back Home</a>
+  </header>
+  <section class="max-w-3xl mx-auto p-8">
+    <h2 class="section-heading">Get In Touch</h2>
+    <form id="contact-form" class="space-y-6 glass-effect p-6 rounded-lg">
+      <input type="text" name="name" placeholder="Full Name" class="form-input w-full" required />
+      <input type="email" name="email" placeholder="Email Address" class="form-input w-full" required />
+      <textarea name="message" rows="5" placeholder="Your message..." class="form-input w-full" required></textarea>
+      <button type="submit" class="btn-primary w-full">📨 Send Message</button>
+    </form>
+    <p class="text-center mt-6">Or email me directly at <a href="mailto:otana.wilson@example.com" class="text-purple-300 underline">otana.wilson@example.com</a></p>
+  </section>
+</body>
+</html>
